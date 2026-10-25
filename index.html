@@ -1,1 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthJob Global — Nursing &amp; Healthcare Jobs for Bangladesh and the Gulf</title>
+<meta name="description" content="Browse reviewed nursing and healthcare job circulars for Bangladesh, UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain, with optional CV and application help.">
+<link rel="canonical" href="https://careersupport-bdg.github.io/jobs/">
+<meta name="theme-color" content="#0B3B66">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HealthJob Global">
+<meta property="og:title" content="HealthJob Global — Nursing &amp; Healthcare Jobs">
+<meta property="og:description" content="Reviewed healthcare job circulars for Bangladesh and the Gulf, plus optional career support.">
+<meta property="og:url" content="https://careersupport-bdg.github.io/jobs/">
+<meta property="og:image" content="https://careersupport-bdg.github.io/jobs/icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to main content</a>
 
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#/" aria-label="HealthJob Global home">
+      <img src="icons/favicon.svg" width="36" height="36" alt="">
+      <span class="brand-text"><strong>HealthJob</strong> Global</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/jobs" data-nav="jobs">Jobs</a>
+      <a href="#/services" data-nav="services">Career Support</a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app" tabindex="-1" aria-live="polite"></main>
+<noscript><div class="wrap"><p class="notice">This website needs JavaScript to show job listings. Please enable JavaScript in your browser.</p></div></noscript>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong>HealthJob Global</strong>
+        <p>An independent job-information and career-support platform for healthcare professionals.</p>
+      </div>
+      <div>
+        <strong>Explore</strong>
+        <ul class="plain">
+          <li><a href="#/jobs">Latest jobs</a></li>
+          <li><a href="#/services">Career support</a></li>
+          <li><a href="#/about">About &amp; disclaimer</a></li>
+          <li><a href="#/privacy">Privacy notice</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <ul class="plain" id="footContact"></ul>
+      </div>
+    </div>
+    <p class="fine">HealthJob Global is not a hospital, government authority, licensing board or recruiter, and does not guarantee jobs, exam results or visas. Always confirm details on the official source before applying.</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Mobile">
+  <a href="#/" data-nav="home"><span aria-hidden="true">🏠</span>Home</a>
+  <a href="#/jobs" data-nav="jobs"><span aria-hidden="true">💼</span>Jobs</a>
+  <a href="#/services" data-nav="services"><span aria-hidden="true">📝</span>Support</a>
+  <a href="#/about" data-nav="about"><span aria-hidden="true">ℹ️</span>About</a>
+</nav>
+
+<script src="assets/js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/supabase.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/jobs.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () { /* site works without it */ });
+  });
+}
+</script>
+</body>
+</html>

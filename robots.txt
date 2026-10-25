@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /jobs/
+Disallow: /jobs/admin.html
+
+Sitemap: https://careersupport-bdg.github.io/jobs/sitemap.xml
